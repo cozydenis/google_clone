@@ -59,8 +59,16 @@
                 cursor: pointer;
                 text-decoration: none;
                 color: black;
-                display: inline-block;
-                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                font-family: Arial, sans-serif;
+                width: auto;
+                box-sizing: border-box;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
                 
             }
 
@@ -84,7 +92,7 @@
 
 
             <div class="button-container">
-                <input type="submit" value="Google Search" class="search-button" name="btnK">
+                <a href="index.html" class="search-button">Google Search</a>
                 <input type="submit" value="Image Search" class="search-button" name="btnK">
                 <a href="advanced-search.html" class="search-button">Advanced Search</a>
                 <input type="submit" value="I'm Feeling Lucky" class="search-button" name="btnI">

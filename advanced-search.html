@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Clone Advanced Search</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f8f8f8;
+
+            }
+
+            .header{
+                text-align: left;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #dadce0;
+            }
+
+
+            .logo-container img {
+                marign-bottom: 20px;
+            }
+
+            .title {
+                font-size: 18px;
+                color: #d93025;
+                margin: 25px;;
+            }
+            
+            .search-form {
+                max-width: 600px;
+                margin: 25px auto;
+            }
+
+            .search-form label {
+                display: block;
+                margin: 15px 0 5px;
+
+            }
+
+            .search-form input[type="text"]{
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #dadce0;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .form-row {
+                display: flex;
+                margin-bottom: 10px;
+                align-items: top;
+            }
+
+            .form-row label {
+                flex-basis: 50%;
+                text-align: left;
+                margin-right: 15px;
+
+
+            }
+
+            .form-row input[type="text"] {
+                flex-grow: 1;
+            }
+
+            .form-row input[type="submit"] {
+                margin-top: 20px;
+                padding 10px 20px;
+                font-size: 1rem;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/googlelogo.png" alt="Google Logo" height="24">
+                </a>
+
+                
+            </div>
+            <h1 class="title">Advanced Search</h1>
+        </div>
+
+        <div class="search-form">
+            <form action="https://www.google.com/search" method="GET">
+                <div class="form-row">
+                    <label for="all-words">all these words:</label>
+                    <input type="text" id="all-words" name="as_q">
+                </div>
+
+                <div class="form-row">
+                    <label for="exact-words">this exact word or phrase:</label>
+                    <input type="text" id="exact-words" name="as_epq">
+                </div>
+
+                <div class="form-row">
+                    <label for="any-words">any of these words:</label>
+                    <input type="text" id="any-words" name="as_oq">
+                </div>
+
+                <div class="form-row">
+                    <label for="none-words">none of these words:</label>
+                    <input type="text" id="none-words" name="as_eq">
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
