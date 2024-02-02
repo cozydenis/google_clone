@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Clone</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body, html{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            /* Conatiner for the logo and search box */
+            .search-container{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button-container {
+                display: flex; /* All child elements in a row */
+                justify-content: center; /* center in container*/
+            }
+
+            #logo{
+                margin-bottom: 20px; /* Space between the logo and the search box*/
+                width: 272px; /* Google logo standard width*/
+                height: 92px; /* Google logo standard height*/
+            }
+
+            /* Style for the search box*/
+            .search-box {
+                width: 482px; /* Standard search box widht*/
+                height: 44px; /* Standard search box heigh*/
+                padding: 10px;
+                margin-bottom: 20px; /* Space between the search box and the buttons*/
+                border: 1px solid #ddd;
+                border-radius: 22px; /* Rounded corners for the search box*/
+                font-size: 16px;
+            }
+
+            /* Style for the search buttons*/
+            .search-button {
+                padding: 10px 20px;
+                margin: 0px 4px;
+                border: 1px solid #f2f2f2;
+                background-color: #f8f9fa;
+                border-radius: 4px;
+                cursor: pointer;
+                
+            }
+
+            /* Do not display outline on focus for buttons */
+            .search-button:focus{
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>  
+        <div class="search-container">
+            <img src="images/googlelogo.png" alt="googlelogo" id="logo">
+
+            <input type="text" class="search-box" placeholder="Search">
+
+            <div class="button-container">
+                <input type="button" value="Google Search" class="search-button">
+                <input type="button" value="I'm Feeling Lucky" class="search-button">
+            </div>
+        </div>
+
+    </body>
+</html>
