@@ -73,16 +73,19 @@
     <body>  
         <div class="search-container">
             <a href="index.html">
-                <img src="images/googlelogo.png" alt="googlelogo" id="logo">
+                <img src="images/googlelogo-images.png" alt="googlelogo" id="logo">
             </a>
-            <form action="https://www.google.com/search" method="GET">
+            <form action="https://www.google.com/search?" method="GET">
+                
+                <input type="hidden" name="tbm" value="isch">
                 <input type="text" class="search-box" placeholder="Search" name="q">
+
 
 
 
             <div class="button-container">
                 <input type="submit" value="Google Search" class="search-button" name="btnK">
-                <a href="image-search.html" class="search-button">Image Search</a>
+                <input type="submit" value="Image Search" class="search-button" name="btnK">
                 <a href="advanced-search.html" class="search-button">Advanced Search</a>
                 <input type="submit" value="I'm Feeling Lucky" class="search-button" name="btnI">
                 
